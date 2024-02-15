@@ -1,0 +1,114 @@
+@import url('css.gg-2.0.0/icons/css/pentagon-right.css');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #1b1c22;
+    font-family:'Poppins', sans-serif;
+    color: #fff;
+    list-style: none;
+}
+:root{
+    --pri: #1b1c22;
+    --sec: #0DF5D9;
+}
+.one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+
+h1{
+    font-family: 'Tilt Warp', cursive;
+    background: linear-gradient( #0DF5D9,#1f67f8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+h3{
+    color: var(--sec);
+}
+.rulescent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.rules{
+    font-size: 15px;
+    width: 70%;
+}
+
+.titels{
+    position: absolute;
+    top: 20px;
+    margin: 20px 10px 0px 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 25px;
+}
+.ico{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.ic{
+    display: flex;
+    align-items: center;
+}
+.ic p{
+    margin-left: 6px;
+}
+.rules li{
+    margin-left: 30px;
+    list-style: none;
+   
+}
+.btncent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:20px 20px 20px 20px;
+    
+}
+.btncent button{
+   
+   width: 200px;
+    height: 60px;
+    border: double 4px transparent;
+    border-radius: 80px;
+    background-image: linear-gradient(#1b1c22, #1b1c22), radial-gradient(circle at top left, rgb(0, 255, 251),#203eff);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+
+  }
+.btncent a{
+    text-decoration: none;
+    color: #fff;
+}
+
+ul li::before {
+    content: "\f0e7";
+    font-family: "Font Awesome 5 Free";
+    padding: 0 10px 0 0;
+    font-weight: 900;
+    color: rgb(255, 86, 86);
+}
+@media (max-width:600px){
+    .rules{
+        width: 95%;
+    }
+    .titels{
+        font-size: 20px;
+        align-items: flex-start;
+    }
+}

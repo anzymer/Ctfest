@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    margin: 20px  30px;
+    position: absolute;
+    top: 10px;
+    display: flex;
+    font-family:'Poppins', sans-serif;
+    font-size: 18px;
+    z-index: 10;
+}
+.navbar ul{
+    display: flex;
+    gap: 80px;
+    list-style: none;
+}
+.navbar ul li a{
+    list-style: none;
+   text-decoration: none;
+   color: #fff;
+   transition: all ease-in-out;
+}
+.navbar ul li a:hover{
+    color: aqua;
+    border-bottom: 2px solid aqua;
+    transition: all ease-in-out;
+}
+.navcent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+@media (max-width:600px){
+    .navbar{
+        margin:0;
+        background-color:#1f1f1f;
+        width: 250px;
+        position: absolute;
+        height: 350px;    
+       left: -300px;
+       transition: all 1s ease-in-out;
+       border-radius: 0px 0px 10px 0px;
+       border: 0px 2px 2px 0px solid antiquewhite;
+       
+    }
+    .navcent{
+        width: 100%;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .navbar ul{
+        margin-top: 40px;    
+        flex-direction: column;
+        gap: 30px;   
+    }
+    .navbar ul li a{  
+       padding: 10px 20px;
+       font-size: 18px;
+    }
+    .toggle-button {
+        position: absolute;
+        top: .75rem;
+        right: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+    }
+    
+    .toggle-button .bar1 {
+        height: 3px;
+        width: 100%;
+        background-color: rgb(255, 100, 100);
+        border-radius: 10px;
+        transform-origin: left center;
+        transition: all .5s ease-in-out;
+    }
+    .toggle-button .bar2 {
+        height: 3px;
+        width: 100%;
+        background-color: rgb(255, 100, 100);
+        border-radius: 10px;
+        transition: all .5s ease-in-out;
+        
+    }
+    .toggle-button .bar3 {
+        height: 3px;
+        width: 100%;
+        background-color: rgb(255, 100, 100);
+        border-radius: 10px;
+        transform-origin: left center;
+        transition: all .05s ease-in-out;
+        
+    }
+    .navbar.active{
+        display: flex;
+        transform: translate(300px);
+        animation-duration: 2s;
+        transition: all 1s ease-in-out;
+        margin: 0;
+    }
+    .bar1.act {
+        transform: rotate(45deg);
+        transition: all 1s ease-in-out;
+        width: 90%;    
+    }
+    .bar2.act {
+        opacity: 0;   
+    }
+    .bar3.act {   
+        transform: rotate(-45deg);
+        transition: all 1s ease-in-out;
+        width: 90%;    
+    }
+    
+    }

@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=030337&c2=9e35a7&gt=c&gd=dbl
+*/
+background: #030337;
+background: conic-gradient(from 225deg, #030337, #9E35A7);
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #1b1c22;
+}
+.lander{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.events{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column;
+    
+}
+.eventsbox{
+    flex-wrap: wrap;
+    
+}
+
+.box1{
+    border: 1px solid #0DF5D9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    text-align: justify;
+    border-radius: 6px;
+}
+.box1 button{
+    
+    margin-top: 40px;
+    padding:  10px 23px;
+    border-radius: 4px;
+    background-color: #0DF5D9;
+    color: #1b1c22;
+   font-weight: bold;
+   font-size: 16px;
+   border: 2px #0DF5D9;
+    
+}
+.box1 button:hover{
+    background-color: #fff;
+}
+.box1 h3{
+    margin-bottom: 10px;
+}
+.eventsbox{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1000px;
+    
+    
+}
+h1{
+    font-size: 80px;
+    margin: 0;    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: -webkit-linear-gradient(#04f5ed,#5255f9);
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 10px;
+
+}
+
+.lander h2{
+    color: #0DF5D9;
+    --webkit-box-reflect: below 1px linear-gradient(transparent,#f90101);
+    line-height: 0.7em;
+    font-size: 80px;
+    margin-left: 10px;   
+}
+
+
+.txt
+{
+    margin: 80px 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.txtp{
+    width: 80%;
+    text-align: justify;
+    color: #cac4c4;
+    margin-left: 10px;
+}
+@media (max-width:600px){
+    .lander{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 70px;
+    }
+    
+}
+.cl1{
+    color: #02fa2c;
+    animation: animatec1 2s infinite;
+}
+.cl2{
+    animation: animatec2 2s infinite;
+}
+.cl3{
+    animation: animatec3 2s infinite;
+}
+.cl4{
+    animation: animatec4 2s infinite;
+}
+@keyframes animatec1{
+    0%
+
+    {
+        background: -webkit-linear-gradient(#04f5ed,#5255f9);
+        -webkit-background-clip: text;
+        color: transparent; 
+        
+        
+    }
+   
+    100%{
+        background: -webkit-linear-gradient(#e352f9,#d4e932);
+        -webkit-background-clip: text;
+        color: transparent; 
+    }
+}
+@keyframes animatec2{
+    0%
+
+    {
+        background: -webkit-linear-gradient(#e352f9,#d4e932);
+        -webkit-background-clip: text;
+        color: transparent;   
+    }
+   
+    100%{
+        background: -webkit-linear-gradient(#04f5ed,#5255f9);
+        -webkit-background-clip: text;
+        color: transparent; 
+    }
+}
+@keyframes animatec3{
+    0%
+
+    {
+        background: -webkit-linear-gradient(#ffd106,#3350f5);
+        -webkit-background-clip: text;
+        color: transparent;   
+    }
+   
+  
+    100%{
+        
+            background: -webkit-linear-gradient(#04f5ed,#5255f9);
+            -webkit-background-clip: text;
+            color: transparent; 
+        
+    }
+}
+@keyframes animatec4{
+    0%
+
+    {
+        background: -webkit-linear-gradient(#ff9b06,#b0056c);
+        -webkit-background-clip: text;
+        color: transparent;   
+    }
+   50%
+    {
+        background: -webkit-linear-gradient(#e352f9,#d4e932);
+        -webkit-background-clip: text;
+        color: transparent;   
+    }
+   
+    100%{
+        background: -webkit-linear-gradient(#04f5ed,#f9f501);
+        -webkit-background-clip: text;
+        color: transparent; 
+    }
+}
